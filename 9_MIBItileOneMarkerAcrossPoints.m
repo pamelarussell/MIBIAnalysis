@@ -4,21 +4,31 @@
 
 % MIBItileOneMarkerAcrossPoints.m
 % 
-% This script plots a tiled image comparing a single marker between points/titers/tissues. It is useful for summarizing data and getting back to it after a while. It should not replace rigorous examination as detailed in section 5.1. To facilitate comparisons, the script will cap all images of a certain marker to the same value. This value can be given on a per-channel basis by adding a ‘Cap’ column to the panel csv file. If a channel-specific cap is not provided, the script will use the default value defined in the script parameters.
+% This script plots a tiled image comparing a single marker between points/titers/tissues. It is useful for summarizing data 
+% and getting back to it after a while. It should not replace rigorous examination as detailed in section 5.1. To facilitate
+% comparisons, the script will cap all images of a certain marker to the same value. This value can be given on a per-channel 
+% basis by adding a ‘Cap’ column to the panel csv file. If a channel-specific cap is not provided, the script will use 
+% the default value defined in the script parameters.
 % 
 % Parameters:
 % -	corePath - Path of points to work on. Several can be specified by separating with commas
-% -	massFile – File name of panel csv file. Can include a ‘Cap’ column, with numerical capping values for the channels (5 should be adequate for most channels. Particularly strong channels like dsDNA may require higher caps).
+% -	massFile – File name of panel csv file. Can include a ‘Cap’ column, with numerical capping values for the channels 
+% (5 should be adequate for most channels. Particularly strong channels like dsDNA may require higher caps).
 % -	xTileNum – Number of rows in the tile
 % -	yTileNum – Number of columns in the tile
 % -	outDir – Output directory for the tiled images
-% -	defaultCap – Default capping value for plotting. Used only if no channel-specific value is mentioned in the csv file. A good number for most antigens is 5. Set to lower to see dynamic range of low-abundant antigens and higher for high-abundant antigens.
-% -	xSize – X-Size of the largest image to be tiled. If, for example you’re tiling images of 1024x1024 and 512x512, then this should be 1024. Increase this number (e.g. to 1030) To create space between the images.
-% -	ySize – Y-Size of the largest image to be tiled. If, for example you’re tiling images of 1024x1024 and 512x512, then this should be 1024. Increase this number (e.g. to 1030) To create space between the images.
+% -	defaultCap – Default capping value for plotting. Used only if no channel-specific value is mentioned in the csv file. A 
+% good number for most antigens is 5. Set to lower to see dynamic range of low-abundant antigens and higher for high-abundant 
+% antigens.
+% -	xSize – X-Size of the largest image to be tiled. If, for example you’re tiling images of 1024x1024 and 512x512, then 
+% this should be 1024. Increase this number (e.g. to 1030) To create space between the images.
+% -	ySize – Y-Size of the largest image to be tiled. If, for example you’re tiling images of 1024x1024 and 512x512, then 
+% this should be 1024. Increase this number (e.g. to 1030) To create space between the images.
 % Output:
 % -	Tiled tiff files generated in the output folder. Warning - these are heavy!
 % Important:
-% -	Use these images for a birds-eye view of the data. Don’t decide titers based on tiled images. To decide titers plot images in full screen as described above.
+% -	Use these images for a birds-eye view of the data. Don’t decide titers based on tiled images. To decide titers plot images 
+% in full screen as described above.
 % 
 % 
 % corePath = {'SampleData/extracted/Point1/dataNoBg.mat', ...

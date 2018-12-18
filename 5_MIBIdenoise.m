@@ -1,7 +1,8 @@
 
 % MIBIdenoise.m
 % 
-% This script denoises the data according to the thresholds identified in the previous step and stored in the ‘NoiseT’ column in the panel csv folder.
+% This script denoises the data according to the thresholds identified in the previous step and stored in the ‘NoiseT’
+% column in the panel csv folder.
 % Parameters:
 % -	corePath - Paths of points to denoise. Add several by separating with commas
 % -	cleanDataPath - Path to store clean data. Data will be renumbered Point1..PointN.
@@ -17,7 +18,8 @@
 % % params
 % corePath = {'SampleData/extracted/Point1/'}; % points to denoise. Add several by separating with commas
 % cleanDataPath = 'SampleData/extracted/cleanData'; % path to store clean data. Data will be renumbered
-% massPath = 'SampleData/SamplePanel.csv'; % path to panel csv. Make sure it has a column 'NoiseT' whci has the noise threshold for each channel
+% massPath = 'SampleData/SamplePanel.csv'; % path to panel csv. Make sure it has a column 'NoiseT' whci has the noise threshold 
+% for each channel
 % K = 25; % number of neighbors to use for density calculation. Usually can be kept as 25.
 
 mkdir(cleanDataPath);

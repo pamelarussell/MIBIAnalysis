@@ -3,8 +3,10 @@
 % 
 % The purpose of this script is to use the parameters identified in the previous section to subtract background for a list of cores.
 % You will need to set the following variables:
-% •	corePath – a path to all the cores you want to subtract background from. Several paths can be specified by separating them by commas
-% •	bgChannel, gausRad, t, removeVal – parameters for subtraction. See explanation above. These should be set to the values identified as optimal in the script above.
+% •	corePath – a path to all the cores you want to subtract background from. Several paths can be specified by separating 
+% them by commas
+% •	bgChannel, gausRad, t, removeVal – parameters for subtraction. See explanation above. These should be set to the values 
+% identified as optimal in the script above.
 % Output:
 % •	TIFsNoBg – directory with TIFs after bg removal
 % •	dataNoBg.mat – matlab file with the following variables:

@@ -1,7 +1,8 @@
 
 % MIBIfilterAggregatesAllChannels.m
 % 
-% This script remove aggregates according to the thresholds identified in the previous step and stored in the ‘AggFilter’ column in the panel csv folder.
+% This script remove aggregates according to the thresholds identified in the previous step and stored in the ‘AggFilter’ 
+% column in the panel csv folder.
 % Parameters:
 % -	corePath - Path of points to denoise. Script expects to find inside folders named Point1..PointN.
 % -	massPath - Path to panel csv. Make sure it has the columns ‘GausFlag’ and  ‘AggFilter’.
@@ -15,8 +16,10 @@
 % % Filter aggregates for all cores in the study
 % 
 % % params
-% corePath = 'SampleData/extracted/cleanData'; % path to points to filter. Script assumes points in folder are named Point1, Point2 etc.
-% massPath = 'SampleData/SamplePanel.csv'; % path to panel csv. Make sure it has a column 'AggFilter' which has the aggregate threshold for each channel
+% corePath = 'SampleData/extracted/cleanData'; % path to points to filter. Script assumes points in folder are named Point1, 
+% Point2 etc.
+% massPath = 'SampleData/SamplePanel.csv'; % path to panel csv. Make sure it has a column 'AggFilter' which has the aggregate 
+% threshold for each channel
 % coreNum = 2; % number of cores to work on
 % gausRad = 1; % radius for gaussian
 
