@@ -4,9 +4,9 @@ function [massDS,countsAllS,countsAllSFilt,baselineVal,baselineValFilt,peaks,pea
 % function of plane
 
 if depthProfile
-    pathSt = ['Point',num2str(pointNumber),'/RowNumber0/Depth_Profile0/Depth',num2str(depthStart-1)];
+    pathSt = ['SampleData/Point',num2str(pointNumber),'/RowNumber0/Depth_Profile0/Depth',num2str(depthStart-1)];
 elseif chemicalImage
-    pathSt = ['Point',num2str(pointNumber),'/RowNumber0/Chemical_Image0'];
+    pathSt = ['SampleData/Point',num2str(pointNumber),'/RowNumber0/Chemical_Image0'];
 else
     error ('If processing msdf, either depth profile or chemical image should be specified');
 end
@@ -29,7 +29,7 @@ totalIonFilt=zeros(size(tmp.counts,1),size(tmp.counts,2),depthEnd);
 
 for d=depthStart:depthEnd
     if depthProfile
-        pathSt = ['Point',num2str(pointNumber),'/RowNumber0/Depth_Profile0/Depth',num2str(d-1)];
+        pathSt = ['SampleData/Point',num2str(pointNumber),'/RowNumber0/Depth_Profile0/Depth',num2str(d-1)];
     end
     d
     tmp = load([pathSt,'/counts.mat']);

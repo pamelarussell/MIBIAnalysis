@@ -16,11 +16,11 @@
 % % remove noise for all cores in the study
 % 
 % % params
-% corePath = {'SampleData/extracted/Point1/'}; % points to denoise. Add several by separating with commas
-% cleanDataPath = 'SampleData/extracted/cleanData'; % path to store clean data. Data will be renumbered
-% massPath = 'SampleData/SamplePanel.csv'; % path to panel csv. Make sure it has a column 'NoiseT' whci has the noise threshold 
+corePath = {'SampleData/extracted/Point1/'}; % points to denoise. Add several by separating with commas
+cleanDataPath = 'SampleData/extracted/cleanData'; % path to store clean data. Data will be renumbered
+massPath = 'SampleData/SamplePanel.csv'; % path to panel csv. Make sure it has a column 'NoiseT' whci has the noise threshold 
 % for each channel
-% K = 25; % number of neighbors to use for density calculation. Usually can be kept as 25.
+K = 25; % number of neighbors to use for density calculation. Usually can be kept as 25.
 
 mkdir(cleanDataPath);
 coreNum= length(corePath);

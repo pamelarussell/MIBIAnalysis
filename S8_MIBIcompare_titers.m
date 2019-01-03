@@ -45,8 +45,7 @@
 % 
 
 
-corePath = {'SampleData/extracted/Point1/', ...
-    'SampleData/extracted/Point2/'}; % cores to work on. Can add several paths, separated by commas.
+corePath = {'SampleData/extracted/Point1/'}; % cores to work on. Can add several paths, separated by commas.
 Headers = {'High','Low'}; % Headers describing each one of the points. Will be used for visualization.
 channel = {'CD8'}; % Channel to work on
 cap = 5; % Capping value for plotting.

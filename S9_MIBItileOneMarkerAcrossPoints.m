@@ -31,15 +31,14 @@
 % in full screen as described above.
 % 
 % 
-% corePath = {'SampleData/extracted/Point1/dataNoBg.mat', ...
-%     'SampleData/extracted/Point2/dataNoBg.mat'}; % cores to work on. Can add several paths, separated by commas.
-% massFile = 'SampleData/SamplePanel.csv'; % panel csv
-% xTileNum = 1; % Number of rows in tile
-% yTileNum = 2; % Number of columns in tile
-% outDir = 'SampleData/extracted/TiledImages';
-% defaultCap = 5; % Cap to use if no other cap is specified in the massFile
-% xSize = 1030; % X-Size of the largest image to be tiled. Can add a few pixels to generate a border
-% ySize = 1030; % Y-Size of the largest image to be tiled. Can add a few pixels to generate a border
+corePath = {'SampleData/extracted/Point1/dataNoBg.mat'}; % cores to work on. Can add several paths, separated by commas.
+massFile = 'SampleData/SamplePanel.csv'; % panel csv
+xTileNum = 1; % Number of rows in tile
+yTileNum = 2; % Number of columns in tile
+outDir = 'SampleData/extracted/TiledImages';
+defaultCap = 5; % Cap to use if no other cap is specified in the massFile
+xSize = 1030; % X-Size of the largest image to be tiled. Can add a few pixels to generate a border
+ySize = 1030; % Y-Size of the largest image to be tiled. Can add a few pixels to generate a border
 
 
 
